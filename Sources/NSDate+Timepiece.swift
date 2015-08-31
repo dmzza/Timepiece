@@ -33,7 +33,7 @@ public func == (lhs: NSDate, rhs: NSDate) -> Bool {
 
 // MARK: - Comparable
 
-extension NSDate: Comparable {}
+//extension NSDate: Comparable {} // Swift 2: Redundant conformance of 'NSDate' to protocol 'Comparable'
 
 public func < (lhs: NSDate, rhs: NSDate) -> Bool {
     return lhs.compare(rhs) == .OrderedAscending
